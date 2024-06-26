@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js.program to print even numbers from the given array 
+
+        let arr1=[5,7,12,30,42];
+        for(let a of arr1){
+            if(a %2==0)
+            document.write(`Even numbers from the given array is ${a}<br>`)
+        }
+
+        // js.program to print smallest numbers from the given array 
+        let arr2 = [10, 5, 7, 12, 30, 42];
+        let s = arr2[0]; 
+
+        for (let a of arr2) {
+        if (a < s) {
+         s = a; 
+        }
+        }
+        document.write(`The smallest number from the given array is ${s}<br>`);
+
+    </script>
+</body>
+</html>

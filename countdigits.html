@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Number Of Digits In a Number</title>
+</head>
+<body>
+    <script>
+        var number=prompt("enter a number");
+        var count=0;
+        
+        num=parseInt(number);
+        while(number>0){
+            number=parseInt(number/10);
+        count++;
+        }
+        document.write(count);
+
+       
+    </script>
+</body>
+</html>

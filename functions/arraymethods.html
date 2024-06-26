@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+       // push
+       let technologies = ["html", "css", "javascript", "bootstrap"];
+       technologies.push("Angular..");
+       document.write(technologies);
+       document.write("<br><br>"); 
+       
+       // pop
+       let frontend = ["html", "css", "javascript", "bootstrap"];
+       frontend.pop();
+       document.write(frontend);
+       document.write("<br><br>"); 
+
+       //unshift
+       let webtech1  = [ "css", "javascript", "bootstrap"];
+       webtech1.unshift("Html");
+       document.write(webtech1);
+       document.write("<br><br>"); 
+
+       //shift
+       let webtech2  = [ "css", "javascript", "bootstrap"];
+       webtech2.shift();
+       document.write(webtech2);
+       document.write("<br><br>");
+
+       //delete
+       let webtech3  = [ "css", "javascript", "bootstrap"];
+       delete webtech3[1];
+       document.write(webtech3);
+       document.write("<br><br>");
+
+   
+       //slice
+       let skills = ["python", "java", "c", "javascript"];
+       let updateskills = skills.slice(0, 2);
+       document.write(updateskills);
+       document.write("<br><br>");
+
+       //splice
+       let technologies1 = ["html", "css", "javascript", "bootstrap"];
+       technologies1.splice(2,1,"angular");
+       document.write(technologies1);
+       document.write("<br><br>");
+
+
+       //concat
+       let frontend1=["html","css","javascript","angular"];
+       let backend=["node","express","mongodb"];
+       let concat=frontend1.concat(backend);
+       document.write(concat);
+       document.write("<br><br>");
+
+       //sort
+       let tech=["html","css","javascript","angular"];
+       let tech1=tech.sort();
+       document.write(tech1);
+       document.write("<br><br>");
+    </script>
+    
+
+
+    <!-- ES6 METHODS -->
+<script>
+     // foreach
+     let arr1=[10,5,7,12,30];
+    arr1.forEach(multiplywithtwo);
+    function multiplywithtwo(a,ind){
+        arr1[ind]=a*2;       
+    }
+    document.write(arr1+"<br>")
+</script>
+   
+   
+
+<script>
+    // map
+    let arr2=[2,4,8,15,21];
+    let newarr2=arr2.map(multiplywithtwo);
+    function multiplywithtwo(a,ind){
+        return a*2;
+    }
+    document.write(newarr2+"<br>")
+</script>   
+
+<script>
+     // filter
+     let arr3=[10,5,7,12,30,42];
+    let newarr3=arr3.filter(multiplywithtwo);
+    function multiplywithtwo(a,ind){
+        if(a%2==0)
+        return a;
+    }
+    document.write(newarr3+"<br>")
+
+</script>
+<script>
+    // findindex
+    let arr4=[10,5,7,12,30,42];
+let newarr4=arr4.findIndex((a)=>a>40)
+document.write(newarr4+"<br>")
+</script>
+
+<script>
+    // reduce
+    let arr5=[10,5,7,12,30,42];
+    let newarr5=arr5.reduce((a,b)=>a+b);document.write(newarr5+"<br>")
+</script>
+
+
+
+</body>
+</html>
